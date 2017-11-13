@@ -34,3 +34,5 @@ function script_ts($path) {
 
     return '<script src="' . $path . $ts . '"></script>';
 }
+
+?>

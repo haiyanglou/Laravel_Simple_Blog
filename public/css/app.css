@@ -64,6 +64,34 @@ textarea {
   resize: none;
 }
 
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+}
+
+aside {
+  background: #ffffff;
+  padding: 72px 96px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  width: 432px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main {
+  background: #f0fafa;
+  padding: 72px 96px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
