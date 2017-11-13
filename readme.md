@@ -19,7 +19,6 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
         ]
    Then create html.php, which could catch .js and .css files.
 
-   ******
    Above step is not necessary, it just adds the timestamp in the css method. 
    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script> in later on layout.blade.php is good

@@ -92,6 +92,48 @@ main {
           flex-grow: 1;
 }
 
+aside header h1 a {
+  font-size: 3rem;
+  color: #000000;
+  display: block;
+}
+
+aside header h2 {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+aside nav {
+  margin-top: 64px;
+}
+
+aside nav .nav-item {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Noto Serif', sans-serif;
+  display: block;
+}
+
+aside nav .nav-item:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+aside nav .nav-item + .nav-item {
+  margin-top: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 8px;
+}
+
+aside nav .nav-item .nav-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Noto Serif', sans-serif;
+  display: block;
+  font-size: 1rem;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

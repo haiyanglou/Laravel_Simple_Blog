@@ -1,0 +1,49 @@
+aside {
+    header {
+        
+        h1 a {
+            font-size: 3rem;
+            color: $black;
+            display: block;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: $black-60;
+            font-weight: 400;
+            margin-top: $spacing * 2;
+        }
+
+    }
+
+    nav {
+        margin-top: $spacing * 16;
+        .nav-item {
+            color: $black-80;
+            font-family: 'Noto Serif', sans-serif;
+            display: block;
+
+            &:hover {
+                color: $black-40;
+            }
+
+            & + .nav-item {
+                margin-top: $spacing * 2;
+                border-top: 1px solid $black-10;
+                padding-top: $spacing * 2;
+                
+            }
+
+            .nav-description {
+                color: $black-60;
+                font-family: 'Noto Serif', sans-serif;
+                display: block;
+                font-size: 1rem;
+                margin-top: $spacing*1.5;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+}
