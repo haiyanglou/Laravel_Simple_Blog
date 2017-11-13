@@ -1,9 +1,18 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700");
 
-// Variables
+// Variables & Colors
 @import "variables";
+@import "colors";
+
+// Layout
+@import "layout/html";
+@import "layout/layout";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Components
+
+// Pages
