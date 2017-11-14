@@ -98,6 +98,12 @@ aside header h1 a {
   display: block;
 }
 
+aside header h1 a:hover {
+  color: #1065d3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 aside header h2 {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.6);
@@ -113,10 +119,13 @@ aside nav .nav-item {
   color: rgba(0, 0, 0, 0.8);
   font-family: 'Noto Serif', sans-serif;
   display: block;
+  font-size: 2.4rem;
 }
 
 aside nav .nav-item:hover {
-  color: rgba(0, 0, 0, 0.4);
+  color: #1065d3;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 aside nav .nav-item + .nav-item {
@@ -8482,5 +8491,40 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.post-excerpt {
+  background: #ffffff;
+  padding: 72px 96px;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.post-excerpt .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  display: block;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post-excerpt .title:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.post-excerpt .excerpt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  display: block;
+  line-height: 1.65em;
+}
+
+.post-excerpt .read-more {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 24px;
 }
 

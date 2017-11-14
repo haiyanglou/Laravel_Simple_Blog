@@ -2,6 +2,34 @@
 
 
 @section('content')
-    Post index
+    <div class="articles">
+        <article class="post-excerpt">
+            <h2><a herf="#">About Me</a></h2>
+            <div class="excerpt">
+            I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS. BEFORE PURSUING MY MASTER'S STUDY AT UT DALLAS, I WAS AN UNDERGRADUATE STUDENT AT THE UNIVERSITY OF STUTTGART IN GERMANY. MY MAJOR WAS ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY.
+            </div>
+        </article>    
+
+        <article class="post-excerpt">
+            <h2><a herf="#">About Me</a></h2>
+            <div class="excerpt">
+            I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS. BEFORE PURSUING MY MASTER'S STUDY AT UT DALLAS, I WAS AN UNDERGRADUATE STUDENT AT THE UNIVERSITY OF STUTTGART IN GERMANY. MY MAJOR WAS ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY.
+            </div>
+        </article> 
+
+        <article class="post-excerpt">
+            <h2><a herf="#">About Me</a></h2>
+            <div class="excerpt">
+            I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS. BEFORE PURSUING MY MASTER'S STUDY AT UT DALLAS, I WAS AN UNDERGRADUATE STUDENT AT THE UNIVERSITY OF STUTTGART IN GERMANY. MY MAJOR WAS ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY.
+            </div>
+        </article> 
+
+        <article class="post-excerpt">
+            <h2><a herf="#">About Me</a></h2>
+            <div class="excerpt">
+            I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS. BEFORE PURSUING MY MASTER'S STUDY AT UT DALLAS, I WAS AN UNDERGRADUATE STUDENT AT THE UNIVERSITY OF STUTTGART IN GERMANY. MY MAJOR WAS ELECTRICAL ENGINEERING AND INFORMATION TECHNOLOGY.
+            </div>
+        </article> 
+    </div>
 
 @stop
