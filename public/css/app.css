@@ -108,7 +108,7 @@ aside header h1 a:hover {
   text-decoration: none;
 }
 
-aside header h2 {
+aside header h2 a {
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 400;
@@ -145,13 +145,6 @@ aside nav .nav-item .nav-description {
   font-size: 1rem;
   margin-top: 6px;
   font-weight: 400;
-}
-
-aside p1 {
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: 400;
-  margin-top: 8px;
 }
 
 /*!

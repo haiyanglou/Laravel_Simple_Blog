@@ -8,33 +8,30 @@
     </header>
 
     <hr>
-
     <nav>
-    <h3>Favorite Articles:</h3>
-
-    <a herf="#article1" class="nav-item">
+    <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
     AAAAAA
-    <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
+    <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
+    </a>
+    
+
+    <nav>
+    <a href="#article2" target="_blank" class="nav-item">
+    AAAAAA
+    <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
 
     <nav>
-    <a herf="#article2" class="nav-item">
-    KKKKKK
-    <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
+    <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
+    AAAAAA
+    <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
 
     <nav>
-    <a herf="#article3" class="nav-item">
-    DDDDDD
-    <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
+    <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
+    AAAAAA
+    <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
-
-    <nav>
-    <a herf="#article4" class="nav-item">
-    NNNNNN
-    <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
-    </a>
-    </nav>
 
     <br /><br /><br />
     <hr>
