@@ -10,30 +10,36 @@
     <hr>
 
     <nav>
-    <a herf="/" class="nav-item">
+    <h3>Favorite Articles:</h3>
+
+    <a herf="#article1" class="nav-item">
     AAAAAA
     <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
     </a>
 
     <nav>
-    <a herf="/" class="nav-item">
+    <a herf="#article2" class="nav-item">
     KKKKKK
     <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
     </a>
 
     <nav>
-    <a herf="/" class="nav-item">
+    <a herf="#article3" class="nav-item">
     DDDDDD
     <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
     </a>
 
     <nav>
-    <a herf="/" class="nav-item">
+    <a herf="#article4" class="nav-item">
     NNNNNN
     <span class="nav-description">I AM CURRENTLY A GRADUATE STUDENT MAJORING IN COMPUTER SCIENCE AT THE UNIVERSITY OF TEXAS AT DALLAS.</span>
     </a>
-
-
-
     </nav>
+
+    <br /><br /><br />
+    <hr>
+    <p1>
+        Copyright &copy; 2017 Haiyang Lou<br />
+		<a href="http://www.utdallas.edu/~hxl164530">To My Website</a>
+    </p1>
 </aside>
