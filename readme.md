@@ -126,3 +126,83 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
    d. 
    Terminal: php artisan migrate -- tables created
    problem: when mysql version lower than 5.7 need to change AppServiceProvider file to configure.
+
+   
+   e. 
+   instead of building new model with artisan, we could copy user model to admin model, change user -> model, add necessary columns
+   now we have table to store admin, and model to manage admin, next step is to set up config/auth.php and ok! 
+
+   f. 
+   config/auth.php 4 parts: defaults, guards, providers, passwords
+
+   default:
+   could configure to specified type of users, user, admin, guest....
+   //add below default: Auth::guard('admin')->check($credentials)
+
+   guards: session for cookies and storage, token for api
+   'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'admin-api' => [
+            'driver' => 'token',
+            'provider' => 'admins',
+        ],
+    ],
+
+   providers: tells how to talk back and forward with database, use eloquent/database driver
+   setup new provider for admin. 
+   'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,  //
+        ],
+
+   passwords: table was automatically created when do step d. php artisan migrate
+   'passwords' => [
+        'users' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+
+        'users' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 15,
+        ],
+    ],
+
+    g. configure Admin.php
+       add: protected $guard = 'admin';
+
+    h. add middleware to route at routes/web.app    
+       just like step 5, direct route ->Route::get('/admin', 'AdminController@index')->name('home');
+       then make controller from terminal or duplicate homecontrolloer and change few attributes
+       
+       2 place to change:
+       --class AdminController extends Controller
+       --return view('admin');
+  
+
+       then create a new "view" file ->resources/views/admin.blade.php (every process just like step 5 procedure)
+
+
+

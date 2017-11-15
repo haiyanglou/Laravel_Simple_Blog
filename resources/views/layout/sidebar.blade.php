@@ -1,10 +1,10 @@
 <aside>
     <header>
     <h1><a href="https://www.utdallas.edu/~haiyang.lou " target="_blank">Haiyang Lou's Easy Blog</a><h1>
-    <h2>
+    <h4>
         I utilized Laravel Framework 5.5, PHP, HTML, CSS, SASS, Vue.js technologies by building this Simple Blog<br /><br />
         November 2017
-    </h2>
+    </h4>
     </header>
 
     <hr>

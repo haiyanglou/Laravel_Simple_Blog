@@ -2,18 +2,20 @@
 
 
 @section('content')
+    <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @if (Auth::check())
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ url('/login') }}">Login</a>
+                        <a href="{{ url('/register') }}">Register</a>
+                    @endif
+                </div>
+            @endif
+    </div>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-	    <div class="container-fluid">
-	        <div class="navbar-header">
-	            <a class="navbar-brand" href="#home">HAIYANG LOU</a>
-	        </div>
-	        <ul class="nav navbar-nav navbar-right">
-	            <li><a href="#login">Login</a></li>
-	            <li><a href="#signup">Signup</a></li>
-	        </ul>
-	    </div>
-	</nav>
+    
 
     <div class="articles">
         <article class="post-excerpt" id="article1">
