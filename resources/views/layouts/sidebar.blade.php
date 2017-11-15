@@ -10,26 +10,26 @@
     <hr>
     <nav>
     <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
-    AAAAAA
+    AAA1
     <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
     
 
     <nav>
     <a href="#article2" target="_blank" class="nav-item">
-    AAAAAA
+    AAA2
     <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
 
     <nav>
     <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
-    AAAAAA
+    AAA3
     <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
 
     <nav>
     <a href="https://www.utdallas.edu/~haiyang.lou " target="_blank" class="nav-item">
-    AAAAAA
+    AAA4
     <span class="nav-description">Implement Later, the left side links could refer to most viewed articles or most marked articles.</span>
     </a>
 

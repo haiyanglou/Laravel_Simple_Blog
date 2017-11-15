@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in USER!
+                    You are logged in as USER!
                 </div>
             </div>
         </div>

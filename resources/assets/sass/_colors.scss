@@ -22,9 +22,10 @@ $white-70:rgba($white,0.7);
 $white-80:rgba($white,0.8);
 $white-90:rgba($white,0.9);
 
-$brand: #0995dd;
-$lightgrey: rgb(240,250,250);
+$lightblue: #0995dd;
+$lightgrey: #e2dada;
+$lightgreen: #12dc55;
 
 @function h($color){
-    @return darken($color,10%);
+    @return darken($color,20%);
 }
