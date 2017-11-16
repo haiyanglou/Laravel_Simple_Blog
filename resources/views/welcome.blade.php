@@ -12,7 +12,7 @@
     
     <body id="@yield('body_id')">
         
-        <div class="flex-center position-ref full-height">
+        <div class="navbar">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())

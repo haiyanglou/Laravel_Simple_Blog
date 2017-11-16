@@ -8,7 +8,6 @@ html,body {
     line-height: $lh-default;
 }
 
-
 *,
 *::before,
 *::after {
@@ -56,4 +55,9 @@ textarea {
 
 .navbar {
     background-color: white;
+}
+
+#app {
+    display: flex;
+    min-height: 100%;
 }

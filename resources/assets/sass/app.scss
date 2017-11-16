@@ -8,13 +8,10 @@
 
 // Layout
 @import "layout/html";
-@import "layout/layout";
+@import "layout/content";
 @import "layout/sidebar";
+@import "layout/navbar";
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-// Components
-@import "component/post-excerpt";
-
-// Pages

@@ -23,9 +23,7 @@ $white-80:rgba($white,0.8);
 $white-90:rgba($white,0.9);
 
 $lightblue: #0995dd;
-$lightgrey: #e2dada;
+$darkblue: #111a98;
+$lightgrey: #f5f5f5;
 $lightgreen: #12dc55;
-
-@function h($color){
-    @return darken($color,20%);
-}
+$darkgreen: #055c05;
