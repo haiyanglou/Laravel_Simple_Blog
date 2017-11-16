@@ -1,13 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
-class PostsController extends Controller
+class IndexController extends Controller
 {
     #index
-
     public function index()
     {
         return view('welcome');

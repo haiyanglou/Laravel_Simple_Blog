@@ -64,10 +64,6 @@ textarea {
   resize: none;
 }
 
-.navbar {
-  background-color: white;
-}
-
 #app {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,10 +115,8 @@ main {
 }
 
 aside {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.02);
   padding: 72px 96px;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   width: 432px;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
