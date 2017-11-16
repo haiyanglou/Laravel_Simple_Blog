@@ -17,7 +17,7 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
    "files": [
          "app/Helpers/html.php"
         ]
-   Then create html.php, which could catch .js and .css files.
+   Then create html.php, which could catch .js and .css files with timestamp.
 
    Above step is not necessary, it just adds the timestamp in the css method. 
    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
@@ -34,26 +34,28 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
 
 5. Configure routes/web.php, Controller, View
    
-   Route::get('/', 'PostsController@index'); // Homepage, index method in PostController
+   Route::get('/', 'IndexController@index'); // Homepage, index method in IndexController
   
-   Terminal: php artisan make:controller PostsController
+   Terminal: php artisan make:controller IndexController
              php artisan make:model Post
  
    
-   Open app/Http/PostsController.php, do follow
-   class PostsController extends Controller
+   Open app/Http/IndexController.php, do follow
+   class IndexController extends Controller
        {
         #index
         public function index()
           {
-            return view('posts.index');
+            return view('welcome');
           }
        }
    -- This step is to locate Controller to view.
 
 
-   Create "posts" folder under resources/views, then create index.blade.php file, write follow
-   @extends('layout')
+   Create "layouts" folder under resources/views, then create content.blade.php file, write follow
+   //Here made changes. Just costomize.
+
+   @extends('welcome')
 
    @section('content')
     Post index
@@ -63,7 +65,7 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
 
 6. sass, js
 
-   Customize resources/assets/sass/app.scss (app.scss import all path to other sass files *_colors, _variables)
+   Customize resources/assets/sass/app.scss (app.scss import all path to other sass files _colors, _variables)
    Build resources/assets/sass/layout folder build html.scss for body of web
 
    Customize resources/assets/js/app.js (app.js import vue.js, already there)
@@ -94,7 +96,7 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
 
    sidebar.blade.php -- contents in sidebar
 
-   index.blade.php -- contents of articles
+   content.blade.php -- contents of articles
    *Personalize this step
 
    **************
@@ -204,5 +206,17 @@ Simple Blog Build Readme - Haiyang Lou, Nov 2017
 
        then create a new "view" file ->resources/views/admin.blade.php (every process just like step 5 procedure)
 
+       ******
 
+10. UI customize
+ 
+    Customize blog content with login/signup ui
+    Here made a lot of changes, some vars and files got changed.
+
+11. Comments/Posts
+
+    
+    
+    
+    
 

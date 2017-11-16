@@ -26,7 +26,8 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <!--{{ config('app.name', 'Laravel') }}-->
+                        Easy Blog
                     </a>
                 </div>
 
@@ -77,7 +78,7 @@
         @include('layouts.content')
         </main> 
         </div>
-        -->
+        
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>   
     </body>
 </html>
