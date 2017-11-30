@@ -23,8 +23,8 @@ class CreateCommentsTable extends Migration
         });
         
         Schema::table('comments', function ($table) {    
-            $table->foreign('name')->references('name')->on('users')->onDelete('no action');
-            $table->foreign('email')->references('email')->on('users')->onDelete('NO ACTION');
+            //$table->foreign('name')->references('name')->on('users')->onDelete('no action');
+            //$table->foreign('email')->references('email')->on('users')->onDelete('NO ACTION');
         });
         
     }

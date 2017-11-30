@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
+use App\Post;
+
 class PostsController extends Controller
 {
     /**
@@ -13,7 +16,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('layouts/post');
+        return view('layouts/post'); 
+
     }
 
     /**
@@ -23,7 +27,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts/create'); 
     }
 
     /**
@@ -33,8 +37,24 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {  
+        //validate data
+        $this->validate($request, array(
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ));
+        //store in database
+        $post = new Post;
+
+        $post->title = $request->title;
+        $post->body = $request->body;
+
+        $post->save(); 
+        //redirect to another page
+
+        //Session::flash('success', 'The post was successfully saved!');
+        return redirect () -> route('post.show', $post->id);
+
     }
 
     /**
@@ -45,7 +65,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        return view('layouts/show')->withPost($post); 
     }
 
     /**

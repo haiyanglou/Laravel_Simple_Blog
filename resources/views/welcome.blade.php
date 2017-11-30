@@ -18,10 +18,12 @@
         
         <main>
         @yield('post')
+        @yield('create')
+
         @yield('content')
+        
         </main> 
         </div>
-        
         
         <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>   
     </body>
