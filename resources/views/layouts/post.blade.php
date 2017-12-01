@@ -84,8 +84,8 @@
     <article class="post-excerpt">
         <h2><a href="#">{{$post->title}}</a></h2>
         <div class="excerpt">
-        {{$post->body}}
-        <!--{{nl2br(e($post->body))}}-->
+        <!--{{$post->body}}-->
+        {!!nl2br(e($post->body))!!}
         </div>
     </article> 
     @endforeach

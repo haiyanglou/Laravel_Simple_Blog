@@ -7,7 +7,7 @@
     <hr>
     <h2><a href="{{ url('/post') }}">{{ $post->title }}</a></h2>
         <div class="excerpt">
-        {{ $post->body }}
+        {!!nl2br(e($post->body))!!}
         </div>
     </article> 
 </div>
