@@ -78,7 +78,17 @@
         Dallas is the most populous city in the Dallas–Fort Worth metroplex, which is the fourth most populous metropolitan area in the United States. <br /><br />
         The city's population ranks ninth in the U.S. and third in Texas after Houston and San Antonio.The city's prominence arose from its historical importance as a center for the oil and cotton industries, and its position along numerous railroad lines.
         </div>
+    </article>
+    
+    @foreach ($posts as $post)
+    <article class="post-excerpt">
+        <h2><a href="#">{{$post->title}}</a></h2>
+        <div class="excerpt">
+        {{$post->body}}
+        <!--{{nl2br(e($post->body))}}-->
+        </div>
     </article> 
+    @endforeach
 
 </div>
 @endsection

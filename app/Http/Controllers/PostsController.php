@@ -16,7 +16,12 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('layouts/post'); 
+        //return view('layouts/post'); 
+        //create a variable and store all the blog posts in it from database
+        $posts = Post::all();
+        
+        //return a view and pass in the above variable
+        return view('layouts/post')->withPosts($posts);
 
     }
 

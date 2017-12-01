@@ -3,7 +3,7 @@
 @section('content')
 
     <article class="post-excerpt">
-    <h1>The post was successfully saved!</h1>
+    <h1>Post Article No. {{$post->id}}</h1>
     <hr>
     <h2><a href="{{ url('/post') }}">{{ $post->title }}</a></h2>
         <div class="excerpt">
