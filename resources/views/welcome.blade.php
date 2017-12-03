@@ -17,10 +17,10 @@
         @yield('sidebar')
         
         <main>
+        @yield('content')
+
         @yield('post')
         @yield('create')
-
-        @yield('content')
         
         </main> 
         </div>

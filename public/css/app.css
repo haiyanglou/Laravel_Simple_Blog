@@ -126,15 +126,14 @@ aside {
 }
 
 aside header h1 a {
-  font-size: 3rem;
+  font-size: 2.4rem;
   color: #0995dd;
   display: block;
 }
 
 aside header h1 a:hover {
-  color: #12dc55;
+  color: #111a98;
   cursor: pointer;
-  text-decoration: none;
 }
 
 aside header h4 {
@@ -145,7 +144,7 @@ aside header h4 {
 }
 
 aside nav {
-  margin-top: 64px;
+  margin-top: 40px;
 }
 
 aside nav .nav-item {
@@ -156,9 +155,8 @@ aside nav .nav-item {
 }
 
 aside nav .nav-item:hover {
-  color: #1065d3;
+  color: #0995dd;
   cursor: pointer;
-  text-decoration: none;
 }
 
 aside nav .nav-item + .nav-item {
@@ -199,8 +197,10 @@ aside nav .nav-item .nav-description {
 }
 
 .navbar a {
-  color: #111a98 !important;
-  font-size: 1.8em !important;
+  font-family: Arial, sans-serif;
+  color: #0995dd !important;
+  font-size: 1.6em !important;
+  font-weight: bold;
 }
 
 /*!

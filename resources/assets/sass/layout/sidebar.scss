@@ -9,13 +9,12 @@ aside {
 
     header {
         h1 a {
-            font-size: 3rem;
+            font-size: 2.4rem;
             color: $lightblue;
             display: block;
             &:hover {
-                color: $lightgreen;
+                color: $darkblue;
                 cursor:pointer;
-                text-decoration: none;
             }
         }
 
@@ -28,7 +27,7 @@ aside {
     }
 
     nav {
-        margin-top: $spacing * 16;
+        margin-top: $spacing * 10;
         .nav-item {
             color: $black-80;
             font-family: sans-serif;
@@ -36,9 +35,8 @@ aside {
             font-size: 2.4rem;
 
             &:hover {
-                color: #1065d3;
+                color: $lightblue;
                 cursor:pointer;
-                text-decoration: none;
             }
 
             & + .nav-item {
