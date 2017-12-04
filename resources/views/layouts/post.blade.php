@@ -3,9 +3,9 @@
 @section('sidebar')
 <aside>
     <header>
-    <h1><a href="https://www.utdallas.edu/~haiyang.lou " target="_blank">Haiyang's Easy Blog</a><h1>
+    <h1><a href="http://www.haiyanglou.com/ " target="_blank">Haiyang's Easy Blog</a><h1>
     <h4>
-        I utilized Laravel Framework 5.5, PHP, HTML, CSS, Sass, Vue.js technologies by building this Simple Blog<br /><br />
+        I utilized Laravel Framework 5.5, PHP, HTML, CSS, Sass, Vue.js technologies by designing and building this simple blog system<br /><br />
         November 2017
     </h4>
     </header>
@@ -37,7 +37,7 @@
     <hr>
     <p1>
         Copyright &copy; 2017 Haiyang Lou<br />
-		<a href="http://www.utdallas.edu/~hxl164530">To My Website</a>
+		<a href="http://www.haiyanglou.com/">To My Website</a>
     </p1>
 </aside>
 @endsection
@@ -62,15 +62,6 @@
         Along with the Technical University of Munich, the Technical University of Darmstadt and Karlsruhe Institute of Technology, it represents one of the four members of the South German Axis of Advanced Engineering and Management. These four universities, in combination with RWTH Aachen are the top five universities of the aforementioned TU9.
         </div>
     </article> 
-
-    <article class="post-excerpt">
-        <h2><a href="https://en.wikipedia.org/wiki/Dallas">DALLAS</a></h2>
-        <div class="excerpt">
-        (PRESET ARTICLE)<br />
-        Dallas is the most populous city in the Dallas–Fort Worth metroplex, which is the fourth most populous metropolitan area in the United States. <br /><br />
-        The city's population ranks ninth in the U.S. and third in Texas after Houston and San Antonio.The city's prominence arose from its historical importance as a center for the oil and cotton industries, and its position along numerous railroad lines.
-        </div>
-    </article>
     
     @foreach ($posts as $post)
     <article class="post-excerpt">
@@ -83,6 +74,10 @@
         <br />
 
         <div class="row">
+        <!--show detail-->
+        <div class="col-sm-2">
+        <a href="{{ route('post.show', $post->id) }}" class="btn btn-success btn-block">Details</a>
+        </div>
         <!--update-->
         <div class="col-sm-2">
         <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary btn-block">Edit</a>
