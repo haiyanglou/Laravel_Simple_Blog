@@ -9,6 +9,19 @@
         <div class="excerpt">
         {!!nl2br(e($post->body))!!}
         </div>
+        
+        @if (Auth::user())
+        <hr>
+        <dl>
+            <dt>Created at:</dt>
+            <dd>{{ date('M j, Y h:i:sa', strtotime($post->created_at)) }}</dd>
+        </dl>
+
+        <dl>
+            <dt>Last updated:</dt>
+            <dd>{{ date('M j, Y h:i:sa', strtotime($post->updated_at)) }}</dd>
+        </dl>
+        @else
+        @endif    
     </article> 
-</div>
 @endsection

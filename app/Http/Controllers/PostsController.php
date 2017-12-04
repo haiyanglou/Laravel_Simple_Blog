@@ -18,7 +18,9 @@ class PostsController extends Controller
     {
         //return view('layouts/post'); 
         //create a variable and store all the blog posts in it from database
-        $posts = Post::all();
+        
+        $posts = Post::paginate(5);
+        //$posts = Post::all();
         
         //return a view and pass in the above variable
         return view('layouts/post')->withPosts($posts);
@@ -56,7 +58,6 @@ class PostsController extends Controller
 
         $post->save(); 
         //redirect to another page
-
         //Session::flash('success', 'The post was successfully saved!');
         return redirect () -> route('post.show', $post->id);
 
@@ -82,7 +83,10 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        // find the post in the database and save as a var
+        $post = Post::find($id);
+        // return the view and pass in the var we previously created
+        return view('layouts/edit')->withPost($post);        
     }
 
     /**
@@ -94,7 +98,21 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //validate data
+        $this->validate($request, array(
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ));
+        //store in database
+        $post = Post::find($id);
+
+        $post->title = $request->title;
+        $post->body = $request->body;
+
+        $post->save(); 
+        //redirect to another page
+        //Session::flash('success', 'The post was successfully saved!');
+        return redirect () -> route('post.show', $post->id);    
     }
 
     /**

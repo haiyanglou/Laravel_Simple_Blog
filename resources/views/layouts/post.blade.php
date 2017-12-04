@@ -78,26 +78,35 @@
         <div class="excerpt">
         <!--{{$post->body}}-->
         {!!nl2br(e($post->body))!!}
+        <!--{!!nl2br(substr($post->body, 0, 200))!!}{{strlen($post->body)>200 ? "...":""}}-->
         @if (Auth::user())
         <br />
+
+        <div class="row">
         <!--update-->
-        <!--update-->
-        <form method="POST" action="{{ route('post.destroy', $post->id) }}">
-        <input type="submit" value="Update" class="btn btn-primary">
-        <input type="hidden" name="_token" value="{{ Session::token() }}">
-        {{ method_field('DELETE') }}
+        <div class="col-sm-2">
+        <a href="{{ route('post.edit', $post->id) }}" class="btn btn-primary btn-block">Edit</a>
+        </div>
         <!--delete-->
+        <div class="col-sm-2">
         <form method="POST" action="{{ route('post.destroy', $post->id) }}">
-        <input type="submit" value="Delete" class="btn btn-danger">
+        <input type="submit" value="Delete" class="btn btn-danger btn-block">
         <input type="hidden" name="_token" value="{{ Session::token() }}">
         {{ method_field('DELETE') }}
         </form>        
+        </div>
         @else
         @endif
 
         </div>
     </article> 
     @endforeach
+
+    <!--Pagination-->
+    <div class="text-center">
+    {!! $posts->links(); !!}
+    </div>
+    <hr>
 
 </div>
 @endsection
@@ -120,7 +129,7 @@
         <label name="body">Post:</label>
         <textarea id="body" name="body" rows="10" class="form-control"></textarea>
       </div>
-      <input type="submit" value="Create Post" class="btn btn-primary btn-lg btn-block">
+      <input type="submit" value="Create Post" class="btn btn-success btn-lg btn-block">
       <input type="hidden" name="_token" value="{{ Session::token() }}">
     </form>
   </div>
